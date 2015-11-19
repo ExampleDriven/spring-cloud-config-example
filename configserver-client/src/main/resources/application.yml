@@ -1,0 +1,15 @@
+server:
+  port: 8889
+
+management:
+  context-path: /admin
+  
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
+    
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+
