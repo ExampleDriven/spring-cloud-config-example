@@ -8,26 +8,20 @@ logging:
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
-    
+
 spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/ExampleDriven/spring-cloud-config-example
+          # The git repo will be cloned to this directory
           basedir: target/config
-          searchPaths: configserver
+          # within the cloned git repo search for properties in this directory
+          searchPaths: properties
         native:
           searchLocations: file:../properties
-          searchLocations: file:../properties
 
-#spring:
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: https://github.com/spring-cloud-samples/config-repo
-#          basedir: target/config
-
+# Activate this using -Dspring.profiles.active=native
 #  profiles:
 #    active: native
