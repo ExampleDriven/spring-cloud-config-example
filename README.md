@@ -13,6 +13,7 @@ This example covers the following :
 - NativeEnvironmentRepository
 
 To run this project
+
     mvn clean install
 
 then execute
