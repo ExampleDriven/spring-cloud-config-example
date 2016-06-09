@@ -20,10 +20,10 @@ spring:
           # The git repo will be cloned to this directory
           basedir: target/config
           # within the cloned git repo search for properties in this directory
-          searchPaths: properties
+          searchPaths: properties-git
         native:
-          searchLocations: file:../properties
+          searchLocations: file:../properties-local
 
 # Activate this using -Dspring.profiles.active=native
-#  profiles:
-#    active: native
+  profiles:
+    active: native
