@@ -11,6 +11,7 @@ This example covers the following :
 - Cloud config server
 - @RefreshScope
 - NativeEnvironmentRepository
+- Spring Retry (when config service not available)
 
 To run this project
 

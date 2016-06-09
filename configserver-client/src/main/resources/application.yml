@@ -7,12 +7,3 @@ management:
 logging:
   level:
     org.springframework.cloud: 'DEBUG'
-    
-spring:
-  application:
-    name: configserver-client
-  cloud:
-    config:
-      uri: http://localhost:8888
-  profiles:
-    active: dev

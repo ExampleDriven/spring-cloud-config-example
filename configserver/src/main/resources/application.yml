@@ -25,5 +25,5 @@ spring:
           searchLocations: file:../properties-local
 
 # Activate this using -Dspring.profiles.active=native
-  profiles:
-    active: native
+#  profiles:
+#    active: native
