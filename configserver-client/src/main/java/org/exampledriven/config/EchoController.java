@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class EchoController {
 
-    @Value("${name}")
-    String name = "World";
+    @Value("${provider-name}")
+    private String name = "nowhere";
 
     @RequestMapping("/")
     public String home() {
-        return "Hello " + name;
+        return "This is a dynamic property loaded from " + name;
     }
 }

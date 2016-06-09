@@ -10,6 +10,8 @@ logging:
     org.springframework.cloud: 'DEBUG'
 
 spring:
+  application:
+    name: configserver
   cloud:
     config:
       server:
